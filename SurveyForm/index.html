@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servey Form</title>
+    <link rel="stylesheet" href="./index.css" />
+    </head>
+
+    <body>
+        <main class="main">
+            <h1 class="heading">Customer survey form</h1>
+            <form class="form" id="form">
+                <div class="formContainer">
+                    <div class="firstname inputContainer">
+                        <label for="firstname">Firstname: </label>
+                        <input  type="firstname" class="form-control firstname" id="firstname" placeholder="Enter firstname" required />
+                    </div>
+                    <div class="lastname inputContainer">
+                        <label for="lastname">Lastname:</label>
+                        <input type="lastname" class="form-control lastname" id="lastname" placeholder="Enter lastname" required />
+                    </div>
+                </div>
+                <div class="formContainer">
+                    <div class="birth inputContainer">
+                        <label for="birthdate">Date Of Birth:</label>
+                        <input type="date" class="form-control birthdate" id="birthdate" placeholder="Select date" required />
+                    </div>
+                </div>
+                <div class="formContainer">
+                    <div class="country inputContainer">
+                        <label for="country">Country:</label>
+                        <select id="country" class="form-control country" name="country" required >
+                            <option class="countryOption" value="">Choose country</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formContainer">
+                    <div class="profession inputContainer">
+                        <label for="profession">Profession:</label>
+                        <input type="text" class="form-control profession" id="profession" placeholder="Enter your profession" required />
+                    </div>
+                </div>
+                <div class="formContainer">
+                    <div class="gender inputContainer">
+                        <label for="gender">Gender:</label>
+                        <div class="radioContainer">
+                            <div class="radio">
+                                <input type="radio" id="gender" name="gender" value="male" required >
+                                <label for="male">Male</label>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" id="gender" name="gender" value="female" required >
+                                <label for="female">Female</label>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" id="gender" name="gender" value="other" required >
+                                <label for="other">Other</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="formContainer">
+                    <div class="email inputContainer">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control email" id="email" placeholder="Enter email" required  />
+                    </div>
+                    <div class="phone inputContainer">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" class="form-control phone" id="phone" placeholder="Enter phone number" required  />
+                    </div>
+                </div>
+                <div class="popup-container">
+                </div>
+
+                <div class="buttons">
+                    <input class="submit" type="submit" name="submit" id="submit" value="Submit" />
+                    <input type="reset" class="reset" id="reset" value="Reset" />
+                </div>
+            </form>
+        </main>
+        <script src="./script.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  background-color: whitesmoke;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.calculator {
+  margin-top: 10%;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0 0 5px #999999;
+}
+.top{
+  position: relative;
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+}
+.top .left{
+  width: 300px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 24px;
+  padding-left: 5px;
+}
+.top .right{
+  width: 100px;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.bottom{
+  position: relative;
+  height: 85%;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom .left{
+  position: relative;
+  width: 300px;
+  height: 100%;
+  background-color: azure;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bottom .right{
+  background-color: aquamarine;
+  width: 100px;
+}
+
+.number{
+  position: relative;
+  width: 100px;
+  height: 25%;
+  border: 1px solid white;
+  background-color: #555454;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  transition: all .2s;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+}
+.number:hover{
+  background-color: #999999;
+}
+.symbol{
+  position: relative;
+  width: 100px;
+  height: 25%;
+  background-color: #999999;
+  font-size: 28px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: all .2s;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+}
+.symbol:hover{
+  background-color: #555454;
+}
